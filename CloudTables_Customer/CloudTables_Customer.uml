@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YE3EQBlREfCzZL3hN0PSaw" name="CloudTables_Customer">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_YIr0UBlREfCzZL3hN0PSaw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_n39woBlREfCzZL3hN0PSaw" name="System">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_I-UQABleEfCzZL3hN0PSaw">
+      <body>Filter by&#xD;
+</body>
+    </ownedComment>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_fQDUQBmAEfCzZL3hN0PSaw" name="Customers need an account">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fQD7UBmAEfCzZL3hN0PSaw" name="constraintSpec">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UvICEBlSEfCzZL3hN0PSaw" name="Search Restaurants">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_nbQ6oBleEfCzZL3hN0PSaw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Xos3QBlSEfCzZL3hN0PSaw" name="Book a table">
+      <extend xmi:type="uml:Extend" xmi:id="_nbPsgBleEfCzZL3hN0PSaw" name="no" extendedCase="_UvICEBlSEfCzZL3hN0PSaw" extensionLocation="_nbQ6oBleEfCzZL3hN0PSaw"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ixMtUBlgEfCzZL3hN0PSaw" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YD_sIBlSEfCzZL3hN0PSaw" name="Pre-Order Food">
+      <extend xmi:type="uml:Extend" xmi:id="_ixMGQBlgEfCzZL3hN0PSaw" extendedCase="_Xos3QBlSEfCzZL3hN0PSaw" extensionLocation="_ixMtUBlgEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YhA_UBlSEfCzZL3hN0PSaw" name="Write Feedback"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5aBGkBlbEfCzZL3hN0PSaw" name="By Name">
+      <include xmi:type="uml:Include" xmi:id="_K2uYkBldEfCzZL3hN0PSaw" addition="_UvICEBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6N-6IBlbEfCzZL3hN0PSaw" name="By Location">
+      <include xmi:type="uml:Include" xmi:id="_OiJhcBldEfCzZL3hN0PSaw" addition="_UvICEBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6l65ABlbEfCzZL3hN0PSaw" name="By Distance">
+      <include xmi:type="uml:Include" xmi:id="_ZIhqQBldEfCzZL3hN0PSaw" addition="_UvICEBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6_mkUBlbEfCzZL3hN0PSaw" name="By Cuisine">
+      <include xmi:type="uml:Include" xmi:id="_i9u00BldEfCzZL3hN0PSaw" addition="_UvICEBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7XYyMBlbEfCzZL3hN0PSaw" name="By Availability">
+      <include xmi:type="uml:Include" xmi:id="_lEcCoBldEfCzZL3hN0PSaw" addition="_UvICEBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7xX_gBlbEfCzZL3hN0PSaw" name="By Price Range">
+      <include xmi:type="uml:Include" xmi:id="_np3z0BldEfCzZL3hN0PSaw" addition="_UvICEBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_pXsVoBlfEfCzZL3hN0PSaw" name="View Room Layout">
+      <include xmi:type="uml:Include" xmi:id="_Q-_3ABlgEfCzZL3hN0PSaw" addition="_Xos3QBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_vgCM4BlfEfCzZL3hN0PSaw" name="View Table Availability">
+      <include xmi:type="uml:Include" xmi:id="_SbKTABlgEfCzZL3hN0PSaw" name="Select Table" addition="_pXsVoBlfEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0IV0wBlfEfCzZL3hN0PSaw" name="Select Seats and Time">
+      <include xmi:type="uml:Include" xmi:id="_UCSo4BlgEfCzZL3hN0PSaw" addition="_vgCM4BlfEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G-b7kBlhEfCzZL3hN0PSaw" name="Select Dishes">
+      <include xmi:type="uml:Include" xmi:id="_VwmIUBlhEfCzZL3hN0PSaw" addition="_YD_sIBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_HgopsBlhEfCzZL3hN0PSaw" name="Select Time">
+      <include xmi:type="uml:Include" xmi:id="_W_lrABlhEfCzZL3hN0PSaw" addition="_G-b7kBlhEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_xqMw0Bl_EfCzZL3hN0PSaw" name="Upload Pictures">
+      <include xmi:type="uml:Include" xmi:id="_VhyfMBmAEfCzZL3hN0PSaw" addition="_YhA_UBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_yJCB4Bl_EfCzZL3hN0PSaw" name="Give Ratings">
+      <include xmi:type="uml:Include" xmi:id="_TOiqMBmAEfCzZL3hN0PSaw" addition="_YhA_UBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_yuDagBl_EfCzZL3hN0PSaw" name="Comment on Restaurants and Food">
+      <include xmi:type="uml:Include" xmi:id="_RYjY8BmAEfCzZL3hN0PSaw" addition="_YhA_UBlSEfCzZL3hN0PSaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ywW1sBmBEfCzZL3hN0PSaw" client="_YhA_UBlSEfCzZL3hN0PSaw" supplier="_fQDUQBmAEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_3Kk_EBlREfCzZL3hN0PSaw" name="Customer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__F9q0BldEfCzZL3hN0PSaw" memberEnd="__F-R4RldEfCzZL3hN0PSaw __F-R4hldEfCzZL3hN0PSaw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__F9q0RldEfCzZL3hN0PSaw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__F-R4BldEfCzZL3hN0PSaw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__F-R4RldEfCzZL3hN0PSaw" name="search restaurants" type="_UvICEBlSEfCzZL3hN0PSaw" association="__F9q0BldEfCzZL3hN0PSaw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__F-R4hldEfCzZL3hN0PSaw" name="customer" type="_3Kk_EBlREfCzZL3hN0PSaw" association="__F9q0BldEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C_xN8BleEfCzZL3hN0PSaw" memberEnd="_C_x1AhleEfCzZL3hN0PSaw _C_x1AxleEfCzZL3hN0PSaw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C_x1ABleEfCzZL3hN0PSaw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C_x1ARleEfCzZL3hN0PSaw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C_x1AhleEfCzZL3hN0PSaw" name="write feedback" type="_YhA_UBlSEfCzZL3hN0PSaw" association="_C_xN8BleEfCzZL3hN0PSaw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C_x1AxleEfCzZL3hN0PSaw" name="customer" type="_3Kk_EBlREfCzZL3hN0PSaw" association="_C_xN8BleEfCzZL3hN0PSaw"/>
+  </packagedElement>
+</uml:Model>

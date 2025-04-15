@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bmS5IBmdEfCzZL3hN0PSaw" name="SoftwareArchitecture">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bnCgABmdEfCzZL3hN0PSaw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_hjq2gBmdEfCzZL3hN0PSaw" name="UserAuthenticationService">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gvc4YBmqEfCzZL3hN0PSaw" client="_hjq2gBmdEfCzZL3hN0PSaw" supplier="_Sf0jMBmlEfCzZL3hN0PSaw" contract="_Sf0jMBmlEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_jO_I0BmdEfCzZL3hN0PSaw" name="RestaurantSearchService">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_cgLi8BmnEfCzZL3hN0PSaw" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_qHJnkBmqEfCzZL3hN0PSaw" client="_jO_I0BmdEfCzZL3hN0PSaw" supplier="_TGQREBmlEfCzZL3hN0PSaw" contract="_TGQREBmlEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_jzKz8BmdEfCzZL3hN0PSaw" name="TableBookingService">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_Sde5gBmoEfCzZL3hN0PSaw" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_qKmWcBmlEfCzZL3hN0PSaw" client="_jzKz8BmdEfCzZL3hN0PSaw" supplier="_TtNjYBmlEfCzZL3hN0PSaw" contract="_TtNjYBmlEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_sa_lYBmdEfCzZL3hN0PSaw" name="PreOrderingService">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_ZonqgBmoEfCzZL3hN0PSaw" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_u5w0QBmlEfCzZL3hN0PSaw" client="_sa_lYBmdEfCzZL3hN0PSaw" supplier="_UO5UIBmlEfCzZL3hN0PSaw" contract="_UO5UIBmlEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_KL1X8BmeEfCzZL3hN0PSaw" name="UserFeedbackService">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_jN8mABmoEfCzZL3hN0PSaw" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_waF-kBmlEfCzZL3hN0PSaw" client="_KL1X8BmeEfCzZL3hN0PSaw" supplier="_UvRdUBmlEfCzZL3hN0PSaw" contract="_UvRdUBmlEfCzZL3hN0PSaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Sf0jMBmlEfCzZL3hN0PSaw" name="IAuth"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_TGQREBmlEfCzZL3hN0PSaw" name="ISearch"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_TtNjYBmlEfCzZL3hN0PSaw" name="IBooking"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_UO5UIBmlEfCzZL3hN0PSaw" name="IPreOrder"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_UvRdUBmlEfCzZL3hN0PSaw" name="IFeedback"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_te34sBmnEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_wOeSgBmnEfCzZL3hN0PSaw" client="_cgLi8BmnEfCzZL3hN0PSaw" supplier="_bmS5IBmdEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_UvPgwBmoEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_XPl9oBmoEfCzZL3hN0PSaw" client="_Sde5gBmoEfCzZL3hN0PSaw" supplier="_UvPgwBmoEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kyLY4BmoEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_n-AbsBmoEfCzZL3hN0PSaw" client="_ZonqgBmoEfCzZL3hN0PSaw" supplier="_bmS5IBmdEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_r74mgBmoEfCzZL3hN0PSaw" client="_jN8mABmoEfCzZL3hN0PSaw" supplier="_bmS5IBmdEfCzZL3hN0PSaw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_17TyIBmqEfCzZL3hN0PSaw" client="_jN8mABmoEfCzZL3hN0PSaw" supplier="_bmS5IBmdEfCzZL3hN0PSaw"/>
+</uml:Model>
